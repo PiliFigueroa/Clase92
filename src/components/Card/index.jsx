@@ -14,7 +14,7 @@ const Card = ({ personaje }) => {
                     <li><b>Species:</b> {species}</li>
                     <li><b>Status:</b> {status}</li>
                     <li><b>Location:</b> {location.name}</li>
-                    <li><b>Popularity: </b>{episode.map((element, index) => <i key={index} className='fa-solid fa-star'></i>)}</li>
+                    <li><b>Popularity: </b>{episode.map(element => <i key={`${element}-${name}`} className='fa-solid fa-star'></i>)}</li>
                 </ul>
             </div>
         </div>
